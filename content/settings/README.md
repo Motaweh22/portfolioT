@@ -35,7 +35,7 @@ The owner's name displayed in the website header and navigation.
 
 | Type | Example |
 |------|---------|
-| String | `"Mohamed Aymen"` |
+| String | `"Mohamed Ayman"` |
 
 ---
 
@@ -67,7 +67,7 @@ The name displayed in the copyright notice at the bottom of every page.
 
 | Type | Example |
 |------|---------|
-| String | `"Mohamed Aymen"` |
+| String | `"Mohamed Ayman"` |
 
 ---
 

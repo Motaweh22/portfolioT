@@ -27,7 +27,7 @@ A list of the gallery cards on the Home page, including titles, subtitles (shown
 | `id` | A unique identifier for this card | Yes | `"AL-GHEYYA"` |
 | `image` | Path to the image file | Yes | `"content/home/images/AL-GHEYYA.webp"` |
 | `title` | Title shown on hover overlay | Yes | `"AL-GHEYYA"` |
-| `subtitle` | Subtitle shown on hover overlay | Yes | `"Project by Mohamed Aymen"` |
+| `subtitle` | Subtitle shown on hover overlay | Yes | `"Project by Mohamed Ayman"` |
 | `linkToProject` | The project folder name to link to (optional) | No | `"AL-GHEYYA"` |
 
 > **Tip:** If you don't want the image to link to a project page, simply remove the `"linkToProject"` line.
@@ -44,7 +44,7 @@ A list of the gallery cards on the Home page, including titles, subtitles (shown
       "id": "ROSETTA",
       "image": "content/home/images/ROSETTA.webp",
       "title": "ROSETTA",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "ROSETTA"
     }
   ]

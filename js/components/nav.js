@@ -2,7 +2,7 @@ function initNav() {
   const navContainer = document.getElementById('header-mount');
   if (!navContainer) return;
 
-  const siteName = (window.SITE_DB && window.SITE_DB.settings && window.SITE_DB.settings.name) ? window.SITE_DB.settings.name : 'Mohamed Aymen';
+  const siteName = (window.SITE_DB && window.SITE_DB.settings && window.SITE_DB.settings.name) ? window.SITE_DB.settings.name : 'Mohamed Ayman';
 
   const navHTML = `
   <header class="site-header">
@@ -61,7 +61,7 @@ function initNav() {
     footerContainer.classList.add('site-footer');
     
     // Default fallback values in case settings is missing
-    let copyright = `© ${new Date().getFullYear()} Mohamed Aymen. All rights reserved.`;
+    let copyright = `© ${new Date().getFullYear()} Mohamed Ayman. All rights reserved.`;
     let socialsHTML = `
       <a href="#" class="footer-link">@mohamedaymen</a>
       <a href="#" class="footer-link">LinkedIn</a>

@@ -1,4 +1,4 @@
-# Mohamed Aymen - Portfolio Website
+# Mohamed Ayman - Portfolio Website
 
 This repository contains the source code for a custom, high-performance portfolio website built for an Architect and Researcher.
 

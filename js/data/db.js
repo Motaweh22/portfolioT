@@ -48,49 +48,49 @@ window.SITE_DB = {
       "id": "AL-GHEYYA",
       "image": "content/home/images/AL-GHEYYA.webp",
       "title": "AL-GHEYYA",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "AL-GHEYYA"
     },
     {
       "id": "Wesal- Dewan Award Competition 2024",
       "image": "content/home/images/Wesal- Dewan Award Competition 2024 - Copy.webp",
       "title": "Wesal- Dewan Award Competition 2024",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "Wesal- Dewan Award Competition 2024"
     },
     {
       "id": "Madinaty Apartment  Interior Design",
       "image": "content/home/images/Madinaty Apartment  Interior Design.webp",
       "title": "Madinaty Apartment  Interior Design",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "Madinaty Apartment  Interior Design"
     },
     {
       "id": "ROSETTA",
       "image": "content/home/images/ROSETTA.webp",
       "title": "ROSETTA",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "ROSETTA"
     },
     {
       "id": "The Caustic",
       "image": "content/home/images/The Caustic.webp",
       "title": "The Caustic",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "The Caustic"
     },
     {
       "id": "THE FLUX",
       "image": "content/home/images/THE FLUX.webp",
       "title": "THE FLUX",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "THE FLUX"
     },
     {
       "id": "Wesal- Dewan Award Competition 2024",
       "image": "content/home/images/Wesal- Dewan Award Competition 2024.webp",
       "title": "Wesal- Dewan Award Competition 2024",
-      "subtitle": "Project by Mohamed Aymen",
+      "subtitle": "Project by Mohamed Ayman",
       "linkToProject": "Wesal- Dewan Award Competition 2024"
     }
   ],

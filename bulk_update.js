@@ -34,7 +34,7 @@ folders.forEach(folder => {
   // Read existing JSON or create a default one
   let data = {
     title: folder.name,
-    subtitle: "Project by Mohamed Aymen",
+    subtitle: "Project by Mohamed Ayman",
     meta: [
       { label: "Year:", value: "2024" },
       { label: "Location:", value: "Egypt" },
