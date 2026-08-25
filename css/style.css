@@ -67,7 +67,7 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
+  
 }
 
 img {
@@ -242,7 +242,7 @@ ul {
 .search-btn {
   background: none;
   border: none;
-  cursor: none;
+  
   color: var(--text-dark);
   display: flex;
   align-items: center;
@@ -261,7 +261,7 @@ ul {
   gap: 5px;
   background: none;
   border: none;
-  cursor: none;
+  
   padding: 4px;
 }
 
@@ -497,7 +497,7 @@ ul {
 
 /* Gallery item */
 .gallery-item {
-  cursor: none;
+  
 }
 
 .gallery-img-wrap {
@@ -644,7 +644,7 @@ ul {
 /* Video card thumbnails */
 .video-thumb {
   position: relative;
-  cursor: none;
+  
 }
 
 .play-btn-overlay {
@@ -992,7 +992,7 @@ ul {
   border: none;
   outline: none;
   color: var(--text-dark);
-  cursor: none;
+  
 }
 
 .search-input::placeholder {
@@ -1004,7 +1004,7 @@ ul {
   border: none;
   font-size: 1rem;
   color: var(--text-muted);
-  cursor: none;
+  
   padding: 4px;
   transition: color 0.2s;
 }
@@ -1247,7 +1247,7 @@ ul {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   color: var(--text-mid);
-  cursor: none;
+  
   border-radius: 2px;
   transition: border-color 0.25s, color 0.25s, transform 0.3s var(--ease-out-expo);
   opacity: 0;
@@ -1694,3 +1694,4 @@ ul {
     font-size: 14vw;
   }
 }
+.cursor, .cursor-dot { display: none !important; }

@@ -15,15 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
   applyBackgroundTheme();
   
   // 1. Initialize Shared Components
-  initCursor();
   initNav();
   initSearch();
   if (typeof initGalleryRenderer === 'function') initGalleryRenderer();
   if (typeof wireGalleryItems === 'function') wireGalleryItems();
   initScrollReveal();
-
-  // Add cursor hover states for common interactive elements
-  addCursorHover('a, button, .nav-link, .search-btn, .project-back-btn', 'is-hovering');
 
   // 2. Page Transition Reveal
   const pageTransition = document.getElementById('pageTransition');
@@ -47,25 +43,6 @@ function wireGalleryItems(dataMap = null) {
   }
 
   document.querySelectorAll('.gallery-item').forEach(item => {
-    // 3D Tilt effect
-    item.addEventListener('mousemove', (e) => {
-      const rect = item.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      item.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
-    });
-    
-    item.addEventListener('mouseleave', () => {
-      item.style.transform = '';
-      item.style.transition = 'transform 0.5s var(--ease-out-expo)';
-      if (cursor) cursor.classList.remove('is-img-hovering');
-    });
-    
-    item.addEventListener('mouseenter', () => {
-      item.style.transition = 'transform 0.12s';
-      if (cursor) cursor.classList.add('is-img-hovering');
-    });
-
     // Navigation on click
     const projectKey = item.dataset.project;
     if (projectKey) {
