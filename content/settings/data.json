@@ -1,12 +1,26 @@
 {
+  "galleryLayout": "masonry",
   "pages": {
-    "home": { "background": "white" },
-    "architecture": { "background": "white" },
-    "about": { "background": "black" },
-    "project": { "background": "white" },
-    "photography": { "background": "white" }
+    "home": {
+      "background": "white",
+      "galleryLayout": "masonry"
+    },
+    "architecture": {
+      "background": "white",
+      "galleryLayout": "grid"
+    },
+    "about": {
+      "background": "black"
+    },
+    "project": {
+      "background": "white"
+    },
+    "photography": {
+      "background": "white",
+      "galleryLayout": "bento"
+    }
   },
-  "name": "Mohamed Aymin",
+  "name": "Mohamed Ayman",
   "socials": [
     {
       "platform": "Mohamed.yman1152003@gmail.com",
@@ -25,5 +39,5 @@
       "url": "+20 1096107769"
     }
   ],
-  "copyright": "Mohamed Aymin"
+  "copyright": "Mohamed Ayman"
 }

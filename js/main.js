@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Clean URL: Hide .html extension in the browser URL bar
+  if (window.location.pathname.endsWith('.html') && window.location.protocol !== 'file:') {
+    try {
+      const newPath = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', newPath + window.location.search);
+    } catch(e) {
+      console.warn("URL rewrite not supported in this environment");
+    }
+  }
+
   applyBackgroundTheme();
   
   // 1. Initialize Shared Components

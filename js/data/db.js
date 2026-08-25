@@ -1,11 +1,14 @@
 window.SITE_DB = {
   "settings": {
+    "galleryLayout": "masonry",
     "pages": {
       "home": {
-        "background": "white"
+        "background": "white",
+        "galleryLayout": "masonry"
       },
       "architecture": {
-        "background": "white"
+        "background": "white",
+        "galleryLayout": "grid"
       },
       "about": {
         "background": "black"
@@ -14,10 +17,11 @@ window.SITE_DB = {
         "background": "white"
       },
       "photography": {
-        "background": "white"
+        "background": "white",
+        "galleryLayout": "bento"
       }
     },
-    "name": "Mohamed Aymin",
+    "name": "Mohamed Ayman",
     "socials": [
       {
         "platform": "Mohamed.yman1152003@gmail.com",
@@ -36,7 +40,7 @@ window.SITE_DB = {
         "url": "+20 1096107769"
       }
     ],
-    "copyright": "Mohamed Aymin"
+    "copyright": "Mohamed Ayman"
   },
   "home": [
     {
