@@ -1,0 +1,92 @@
+document.addEventListener('DOMContentLoaded', () => {
+  applyBackgroundTheme();
+  
+  // 1. Initialize Shared Components
+  initCursor();
+  initNav();
+  initSearch();
+  if (typeof initGalleryRenderer === 'function') initGalleryRenderer();
+  if (typeof wireGalleryItems === 'function') wireGalleryItems();
+  initScrollReveal();
+
+  // Add cursor hover states for common interactive elements
+  addCursorHover('a, button, .nav-link, .search-btn, .project-back-btn', 'is-hovering');
+
+  // 2. Page Transition Reveal
+  const pageTransition = document.getElementById('pageTransition');
+  if (pageTransition) {
+    requestAnimationFrame(() => {
+      setTimeout(() => pageTransition.classList.add('reveal'), 50);
+    });
+  }
+});
+
+// Generic Gallery Wiring (used on Home, Architecture, Research)
+function wireGalleryItems(dataMap = null) {
+  const cursor = document.getElementById('cursor');
+
+  // If a dataMap is provided, set the data-project attribute on elements with matching IDs
+  if (dataMap) {
+    Object.entries(dataMap).forEach(([id, projectKey]) => {
+      const el = document.getElementById(id);
+      if (el) el.dataset.project = projectKey;
+    });
+  }
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    // 3D Tilt effect
+    item.addEventListener('mousemove', (e) => {
+      const rect = item.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      item.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      item.style.transform = '';
+      item.style.transition = 'transform 0.5s var(--ease-out-expo)';
+      if (cursor) cursor.classList.remove('is-img-hovering');
+    });
+    
+    item.addEventListener('mouseenter', () => {
+      item.style.transition = 'transform 0.12s';
+      if (cursor) cursor.classList.add('is-img-hovering');
+    });
+
+    // Navigation on click
+    const projectKey = item.dataset.project;
+    if (projectKey) {
+      item.style.cursor = 'none';
+      item.addEventListener('click', () => {
+        window.location.href = `project.html?key=${projectKey}`;
+      });
+    }
+  });
+}
+
+function applyBackgroundTheme() {
+  if (!window.SITE_DB || !window.SITE_DB.settings || !window.SITE_DB.settings.pages) return;
+  
+  const pageId = document.body.getAttribute('data-active-page');
+  let theme = "white"; // Default fallback
+  
+  // Apply general page setting if defined
+  if (pageId && window.SITE_DB.settings.pages[pageId] && window.SITE_DB.settings.pages[pageId].background) {
+    theme = window.SITE_DB.settings.pages[pageId].background;
+  }
+  
+  // Override for individual projects
+  if (pageId === 'project') {
+    const urlParams = new URLSearchParams(window.location.search);
+    const key = urlParams.get('key');
+    if (key && window.SITE_DB.projects && window.SITE_DB.projects[key]) {
+      const projBg = window.SITE_DB.projects[key].background;
+      if (projBg === "black" || projBg === "white") {
+        theme = projBg;
+      }
+    }
+  }
+  
+  // Apply theme to the body
+  document.body.setAttribute('data-theme', theme);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Aymen</title>
+  <meta name="description" content="Mohamed Aymen — Architect | Researcher. Investigating architectural practice through research and design." />
+  
+  
+  
+  <link rel="stylesheet" href="css/style.css?v=6" />
+</head>
+<body data-active-page="home">
+
+  <!-- Page transition overlay -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Header Mount Point -->
+  <div id="header-mount"></div>
+
+  <main class="page" id="page-home">
+    <!-- Hero -->
+    <section class="hero-section hero-slider-active">
+      <div id="heroSlider" class="hero-slider-container"></div>
+      <div class="hero-slider-overlay"></div>
+      <div class="hero-text">
+        <h1 class="hero-name" id="heroName">Mohamed Aymen</h1>
+        <p class="hero-subtitle" id="heroSubtitle">
+          <span class="hero-role-word" data-index="0">Architect</span>
+          <span class="hero-divider"> I </span>
+          <span class="hero-role-word highlight" data-index="1">Researcher</span>
+        </p>
+        <p class="hero-tagline" id="heroTagline">Investigating architectural practice through research and design.</p>
+      </div>
+      <a href="#dynamic-gallery" class="hero-scroll-arrow" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+  <!-- Work Gallery -->
+  <div class="gallery-section-wrapper" id="dynamic-gallery-section">
+    <section class="gallery-section">
+      <p class="gallery-label fade-in-up">Work Gallery</p>
+      <div id="dynamic-gallery" class="gallery-grid" data-gallery-type="home"></div>
+    </section>
+  </div>
+  </main>
+
+  <!-- Footer Mount Point -->
+  <div id="footer-mount"></div>
+
+  <!-- Shared Scripts -->
+  <script src="js/data/db.js"></script>
+  <script src="js/components/cursor.js"></script>
+  <script src="js/components/nav.js"></script>
+  <script src="js/components/search.js"></script>
+  <script src="js/components/scroll-reveal.js"></script>
+  <script src="js/main.js?v=2"></script>
+  
+  <!-- Page Specific Scripts -->
+  <script src="js/components/gallery-renderer.js"></script>
+  <script src="js/pages/home.js"></script>
+<script src="js/components/lightbox.js"></script></body>
+</html>
