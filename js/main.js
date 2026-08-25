@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Clean URL: Hide .html extension in the browser URL bar
   if (window.location.pathname.endsWith('.html') && window.location.protocol !== 'file:') {
     try {
-      const newPath = window.location.pathname.replace(/\.html$/, '');
+      let newPath = window.location.pathname.replace(/\.html$/, '');
+      if (newPath.endsWith('/index')) {
+        newPath = newPath.replace(/\/index$/, '/');
+      }
       window.history.replaceState(null, '', newPath + window.location.search);
     } catch(e) {
       console.warn("URL rewrite not supported in this environment");
