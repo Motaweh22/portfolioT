@@ -6,6 +6,10 @@
     "content/home/images/ROSETTA.webp",
     "content/home/images/The Caustic.webp"
   ],
+  "heroText": {
+    "roles": ["Architect", "Researcher"],
+    "tagline": "Investigating architectural practice through research and design."
+  },
   "gallery": [
     {
       "id": "AL-GHEYYA",

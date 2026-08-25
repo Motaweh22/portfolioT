@@ -23,6 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
   }
 
+  const heroSubtitle = document.getElementById('heroSubtitle');
+  const heroTagline = document.getElementById('heroTagline');
+  
+  if (window.SITE_DB && window.SITE_DB.homeData && window.SITE_DB.homeData.heroText) {
+    const heroText = window.SITE_DB.homeData.heroText;
+    
+    if (heroTagline && heroText.tagline) {
+      heroTagline.textContent = heroText.tagline;
+    }
+    
+    if (heroSubtitle && heroText.roles && heroText.roles.length > 0) {
+      heroSubtitle.innerHTML = heroText.roles.map((role, i) => {
+        let highlight = i === heroText.roles.length - 1 ? ' highlight' : '';
+        return `<span class="hero-role-word${highlight}" data-index="${i}">${role}</span>`;
+      }).join('<span class="hero-divider"> I </span>');
+    }
+  }
+
   /* ========================================
      HERO BACKGROUND SLIDER (Nuvelti style)
   ======================================== */

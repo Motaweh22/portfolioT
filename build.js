@@ -10,9 +10,10 @@ if (fs.existsSync('content/home/home.json')) {
   console.log('Updating home data...');
   const homeData = JSON.parse(fs.readFileSync('content/home/home.json', 'utf-8'));
   
-  // Feed the slider
+  // Feed the slider and text
   db.homeData = {
-    sliderImages: homeData.sliderImages || []
+    sliderImages: homeData.sliderImages || [],
+    heroText: homeData.heroText || null
   };
   
   // Feed the gallery

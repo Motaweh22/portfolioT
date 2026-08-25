@@ -49,7 +49,8 @@ window.SITE_DB = {
       "image": "content/home/images/AL-GHEYYA.webp",
       "title": "AL-GHEYYA",
       "subtitle": "Project by Mohamed Ayman",
-      "linkToProject": "AL-GHEYYA"
+      "linkToProject": "AL-GHEYYA",
+      "bentoSize": "2x1"
     },
     {
       "id": "Wesal- Dewan Award Competition 2024",
@@ -1485,7 +1486,14 @@ window.SITE_DB = {
       "content/home/images/Madinaty Apartment  Interior Design.webp",
       "content/home/images/ROSETTA.webp",
       "content/home/images/The Caustic.webp"
-    ]
+    ],
+    "heroText": {
+      "roles": [
+        "Architect",
+        "Researcher"
+      ],
+      "tagline": "Investigating architectural practice through research and design."
+    }
   },
   "photography": [
     {
