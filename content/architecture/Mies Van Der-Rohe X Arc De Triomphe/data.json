@@ -1,0 +1,70 @@
+{
+  "title": "Mies Van Der-Rohe X Arc De Triomphe",
+  "subtitle": "Academic Work, 2022",
+  "meta": [
+    {
+      "label": "Year:",
+      "value": "2022"
+    },
+    {
+      "label": "Location:",
+      "value": "Giza, Egypt"
+    },
+    {
+      "label": "Program:",
+      "value": "Urban Research"
+    }
+  ],
+  "description": [
+    "The Multilateral explores multi-layered infrastructure in Giza."
+  ],
+  "gallery": [
+    {
+      "cols": 1,
+      "images": [
+        "images/635455217749693.679628b03a7c5.gif"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/c5329d217749693.6796229e14364.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/5078d8217749693.6798b9ea9f7dc.webp",
+        "images/faa600217749693.6798c7d2ec56d.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/d1005c217749693.6798b9e9f31df.webp",
+        "images/739016217749693.6798d918d7147.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/2cd1b4217749693.679f5a810c4d6.webp",
+        "images/ae8b94217749693.6798cf6c1a634.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/1d66a8217749693.6798c4f072cdb.webp",
+        "images/2908a0217749693.6798d45519b80.webp"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/80aad3217749693.6798d05c606f3.webp"
+      ]
+    }
+  ],
+  "hero": "images/635455217749693.679628b03a7c5.gif"
+}
