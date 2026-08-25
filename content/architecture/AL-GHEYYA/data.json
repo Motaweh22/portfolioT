@@ -1,0 +1,132 @@
+{
+  "background": "black",
+  "title": "AL-GHEYYAaaaa",
+  "subtitle": "​EGYPT URBAN OASIS Competition by REC & BASE studio 1st PLACE WINNERS",
+  "meta": [
+    {
+      "label": "Year:",
+      "value": "2029"
+    },
+    {
+      "label": "Location:",
+      "value": "Al-Moez, Cairo, Egypt"
+    },
+    {
+      "label": "Program:",
+      "value": "Urban Retreat"
+    }
+  ],
+  "description": [
+    "The Multilateral explores multi-layered infrastructure in Giza."
+  ],
+  "gallery": [
+    {
+      "cols": 1,
+      "images": [
+        "images/8d86af231699431.68b485bd22bcd.jpg"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/6cb158231699431.68b6e12786bb4.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/dbc1bd231699431.68b53ca1ac92c.webp",
+        "images/519ccc231699431.68b487bd0f4c9.webp"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/25c205231699431.68b43e6d223be.gif"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/2bceb4231699431.68bade9b9a3ac.webp",
+        "images/374fa5231699431.68b49148498d0.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/00285a231699431.68924bd6c3f25.webp",
+        "images/826e99231699431.68b52e402d168.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/529885231699431.68b6fc6c22f2d.webp",
+        "images/b4722a231699431.68b52fd15a614.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/09f061231699431.68b6f5f22ca62.webp",
+        "images/34f4bb231699431.68b6f2390c6b0.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/bf2587231699431.68b6f5f22d021.gif",
+        "images/ba4d9c231699431.68b6e00d456eb.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/341bed231699431.68b704a2e681f.webp",
+        "images/c5ae5e231699431.68b6d0e3b6bb5.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/4df520231699431.68b6e2f21444f.webp",
+        "images/e801ca231699431.68b54916ae835.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/d5116f231699431.68b6dd528e373.webp",
+        "images/59a5b0231699431.68b6d11edb399.webp"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/749610231699431.68924e139e991.webp"
+      ]
+    },
+    {
+      "cols": 1,
+      "images": [
+        "images/311f68231699431.68924e139f1cb.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/8271b6231699431.6892526918bcc.webp",
+        "images/583867231699431.689252691909e.webp"
+      ]
+    },
+    {
+      "cols": 2,
+      "images": [
+        "images/af79f4231699431.68b6dc4dd3749.webp",
+        "images/138ca4231699431.68b6e0d586b43.webp"
+      ]
+    }
+  ],
+  "hero": "images/8d86af231699431.68b485bd22bcd.jpg"
+}
