@@ -167,14 +167,10 @@ function initGalleryRenderer() {
       }
       
       html += `
-        <article class="gallery-item fade-in-up ${bentoClass}" data-delay="${delay}" ${item.type === 'project' ? `data-project="${item.linkToProject}"` : ''}>
+        <article class="gallery-item fade-in-up ${bentoClass}" data-delay="${delay}" ${(item.type === 'project' || item.type === 'home') ? `data-project="${item.linkToProject}"` : ''}>
           <div class="gallery-img-wrap">
             <img src="${item.src}" class="gallery-img" loading="lazy" alt="${item.title}" />
             ${item.type === 'project' ? `
-              <div class="gallery-hover-overlay">
-                <span class="gallery-hover-label">View Project →</span>
-              </div>
-            ` : item.type === 'home' ? `
               <div class="home-hover-overlay">
                 <div class="hover-content">
                   <span class="hover-title">${item.title}</span>
@@ -183,7 +179,7 @@ function initGalleryRenderer() {
               </div>
             ` : ''}
           </div>
-          ${(item.type === 'project' || item.type === 'photography') ? `
+          ${(item.type === 'home' || item.type === 'photography') ? `
             <div class="gallery-caption">
               <p class="caption-title">${item.title}</p>
               <p class="caption-sub">${item.subtitle}</p>
