@@ -4,6 +4,15 @@
    + Enhanced animations & interactions
    ============================================= */
 
+/* ===== FONTS ===== */
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ===== VARIABLES ===== */
 :root {
   --bg: #f0f0f0;
@@ -15,8 +24,8 @@
   --accent-rust: #b5763a;
   --accent-hover: #3a5a8f;
   --nav-height: 52px;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Outfit', sans-serif;
+  --font-sans: 'Outfit', sans-serif;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
