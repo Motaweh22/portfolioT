@@ -1,0 +1,10 @@
+{
+  "images": [
+    { "src": "content/photography/images/AL-GHEYYA.webp", "title": "Al-Gheyya", "details": "Architecture" },
+    { "src": "content/photography/images/Madinaty Apartment  Interior Design.webp", "title": "Madinaty Apartment", "details": "Interior Design" },
+    { "src": "content/photography/images/ROSETTA.webp", "title": "Rosetta", "details": "Concept" },
+    { "src": "content/photography/images/THE FLUX.webp", "title": "The Flux", "details": "Design" },
+    { "src": "content/photography/images/The Caustic.webp", "title": "The Caustic", "details": "Installation" },
+    { "src": "content/photography/images/Wesal- Dewan Award Competition 2024.webp", "title": "Wesal", "details": "Dewan Award 2024" }
+  ]
+}

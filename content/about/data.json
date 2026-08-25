@@ -1,0 +1,111 @@
+{
+  "image": "content/about/images/portrait.png",
+  "leftColSubtitle": "Junior Architect (Fresh Grad)",
+  "paragraphs": [
+    "As an Architecture student at Ain Shams University, I'm driven by design, creativity, and exploration. Beyond academics, I engage in student activities and competitions, honing teamwork, leadership, and problem-solving skills.",
+    "<br><strong>Beyond Architecture learning</strong><br>I find inspiration in wandering the streets of Egypt, observing the layers of history, culture, and everyday life that shape the built environment. This exploration has deepened my appreciation for architecture and fueled my love for photography, allowing me to capture the essence of spaces and their stories."
+  ],
+  "name": "Mohamed Ayman",
+  "title": "Architecture Student",
+  "contact": {
+    "location": "Cairo, Egypt",
+    "phone": "+20 01096107769",
+    "email": "Mohamed.yman1152003@gmail.com",
+    "behance": "Behance.net",
+    "linkedin": "Linkedin.com"
+  },
+  "education": [
+    {
+      "date": "SEP 2022- Present",
+      "title": "<strong>Student | Dept of Architecture</strong> | Ain Shams university, Cairo, Egypt"
+    }
+  ],
+  "experience": [
+    {
+      "date": "SEP 2025",
+      "title": "<strong>Snøhetta Master class 2nd edition.</strong> Alexanderia Library",
+      "bullets": [
+        "Selected among <strong>35</strong> students from over 650 applicants across Egypt to join the Snøhetta Masterclass at the Bibliotheca Alexandrina, led by <strong>Martin Gran.</strong>"
+      ]
+    },
+    {
+      "date": "AUG 2025",
+      "title": "<strong>Archigen Intern.</strong> AI-driven architecture platform",
+      "bullets": [
+        "Hands-on with <strong>ComfyUI</strong>, developing custom workflows for <strong>generative architectural design.</strong>"
+      ]
+    },
+    {
+      "date": "JUL 2025- AUG 2025",
+      "title": "<strong>Architecture Intern.</strong> ECG Consultants",
+      "bullets": [
+        "Working as a designer on making proposals for 2 buildings in ( Libya & Egypt) and designing a parametric pattern on the elevation of a building in Kenya."
+      ]
+    },
+    {
+      "date": "SEP 2023- SEP 2025",
+      "title": "<strong>Graphic design course instructor.</strong> STP (Student Activity)",
+      "bullets": [
+        "Explaining photoshop ,Illustrator and Graphic design principles in Five sessions"
+      ]
+    },
+    {
+      "date": "AUG 2024- SEP 2024",
+      "title": "<strong>Architecture Intern.</strong> ECG Consultants",
+      "bullets": [
+        "Contributed to Revit-based technical drawings for a school project in NEOM, Saudi Arabia."
+      ]
+    },
+    {
+      "date": "SEP 2022- AUG 2023",
+      "title": "<strong>Member at Graphic design team.</strong> STP (Student Activity)",
+      "bullets": [
+        "Working on online and offline campaigns"
+      ]
+    }
+  ],
+  "competitions": [
+    {
+      "date": "AUG 2025",
+      "title": "<strong>First Place.</strong> Egypt Urban Oasis competition."
+    },
+    {
+      "date": "MAY 2025",
+      "title": "<strong>First Place.</strong> Beyond The Tide | Smart System design studio"
+    },
+    {
+      "date": "MAY 2025",
+      "title": "<strong>Second Place.</strong> Floating houses | World Architecture Competition"
+    },
+    {
+      "date": "AUG 2024",
+      "title": "<strong>Honorable mention (Top 10).</strong> Tamayouz Award | Dewan Award for Architecture"
+    },
+    {
+      "date": "JAN 2024",
+      "title": "<strong>Honorable mention.</strong> Ainshams University Rebranding"
+    },
+    {
+      "date": "JUL 2026",
+      "title": "<strong>In progress.</strong> Midar Library competition."
+    },
+    {
+      "date": "MAR 2025",
+      "title": "<strong>Participation.</strong> 120 Hours competition."
+    },
+    {
+      "date": "JUN 2024",
+      "title": "<strong>Participation.</strong> Genius Loci 4 | De-lab"
+    },
+    {
+      "date": "JAN 2023",
+      "title": "<strong>Participation.</strong> Visual Identity for Cairo Governorate"
+    },
+    {
+      "date": "JAN 2026",
+      "title": "<strong>Participation.</strong> Al Fozan Award | Islamic Center - Turku, Finland"
+    }
+  ],
+  "softwares": "3ds Max, Revit, Rhino, Grasshopper, AutoCAD, Lumion, Adobe Suite, Chaos Corona, SketchUp",
+  "softSkills": "Exploring Streets, Graphic Design, Presentation Skills, Time Management"
+}

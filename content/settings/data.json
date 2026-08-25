@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "home": { "background": "white" },
+    "architecture": { "background": "white" },
+    "about": { "background": "black" },
+    "project": { "background": "white" },
+    "photography": { "background": "white" }
+  },
+  "name": "Mohamed Aymin",
+  "socials": [
+    {
+      "platform": "Mohamed.yman1152003@gmail.com",
+      "url": "Mohamed.yman1152003@gmail.com"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mohamed-ayman-a751b831a/"
+    },
+    {
+      "platform": "Behance",
+      "url": "https://www.behance.net/muhammedayman2"
+    },
+    {
+      "platform": "+20 1096107769",
+      "url": "+20 1096107769"
+    }
+  ],
+  "copyright": "Mohamed Aymin"
+}
