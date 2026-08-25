@@ -4,7 +4,8 @@ window.SITE_DB = {
     "pages": {
       "home": {
         "background": "white",
-        "galleryLayout": "masonry"
+        "galleryLayout": "masonry",
+        "hideLayoutControls": true
       },
       "architecture": {
         "background": "white",

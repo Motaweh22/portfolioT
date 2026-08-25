@@ -59,69 +59,87 @@ function initGalleryRenderer() {
 
   // 2. Setup Layout Controls
   let currentLayout = 'masonry'; // default fallback
+  let hideControls = false;
+  
   if (window.SITE_DB.settings) {
     // Check page-specific layout first
     if (window.SITE_DB.settings.pages && 
-        window.SITE_DB.settings.pages[galleryType] && 
-        window.SITE_DB.settings.pages[galleryType].galleryLayout) {
-      currentLayout = window.SITE_DB.settings.pages[galleryType].galleryLayout;
+        window.SITE_DB.settings.pages[galleryType]) {
+      
+      if (window.SITE_DB.settings.pages[galleryType].galleryLayout) {
+        currentLayout = window.SITE_DB.settings.pages[galleryType].galleryLayout;
+      }
+      
+      if (window.SITE_DB.settings.pages[galleryType].hideLayoutControls !== undefined) {
+        hideControls = window.SITE_DB.settings.pages[galleryType].hideLayoutControls;
+      }
     } 
     // Fallback to global layout
-    else if (window.SITE_DB.settings.galleryLayout) {
-      currentLayout = window.SITE_DB.settings.galleryLayout;
+    else {
+      if (window.SITE_DB.settings.galleryLayout) {
+        currentLayout = window.SITE_DB.settings.galleryLayout;
+      }
+      if (window.SITE_DB.settings.hideLayoutControls !== undefined) {
+        hideControls = window.SITE_DB.settings.hideLayoutControls;
+      }
     }
   }
   
   // Check if controls already exist (if re-rendering)
   let controlsDiv = document.querySelector('.gallery-controls');
-  if (!controlsDiv) {
-    controlsDiv = document.createElement('div');
-    controlsDiv.className = 'gallery-controls fade-in-up';
-    controlsDiv.style.display = 'flex';
-    controlsDiv.style.gap = '15px';
-    controlsDiv.style.justifyContent = 'flex-end';
-    controlsDiv.style.marginBottom = '30px';
-    
-    const layouts = ['masonry', 'bento', 'grid'];
-    layouts.forEach(layout => {
-      const btn = document.createElement('button');
-      btn.className = `layout-btn ${currentLayout === layout ? 'active' : ''}`;
-      btn.setAttribute('data-layout', layout);
-      btn.innerText = layout.charAt(0).toUpperCase() + layout.slice(1);
+  
+  if (!hideControls) {
+    if (!controlsDiv) {
+      controlsDiv = document.createElement('div');
+      controlsDiv.className = 'gallery-controls fade-in-up';
+      controlsDiv.style.display = 'flex';
+      controlsDiv.style.gap = '15px';
+      controlsDiv.style.justifyContent = 'flex-end';
+      controlsDiv.style.marginBottom = '30px';
       
-      // Basic inline styles for the buttons
-      btn.style.background = 'transparent';
-      btn.style.border = 'none';
-      btn.style.cursor = 'pointer';
-      btn.style.fontFamily = 'var(--font-sans)';
-      btn.style.fontSize = '0.75rem';
-      btn.style.textTransform = 'uppercase';
-      btn.style.letterSpacing = '0.1em';
-      btn.style.color = currentLayout === layout ? 'var(--text-dark)' : 'var(--text-muted)';
-      btn.style.borderBottom = currentLayout === layout ? '1px solid var(--text-dark)' : '1px solid transparent';
-      btn.style.paddingBottom = '4px';
-      btn.style.transition = 'all 0.3s ease';
-      
-      btn.addEventListener('click', () => {
-        currentLayout = layout;
-        renderGallery();
+      const layouts = ['masonry', 'bento', 'grid'];
+      layouts.forEach(layout => {
+        const btn = document.createElement('button');
+        btn.className = `layout-btn ${currentLayout === layout ? 'active' : ''}`;
+        btn.setAttribute('data-layout', layout);
+        btn.innerText = layout.charAt(0).toUpperCase() + layout.slice(1);
         
-        // Update active states
-        controlsDiv.querySelectorAll('.layout-btn').forEach(b => {
-          if (b.getAttribute('data-layout') === layout) {
-            b.classList.add('active');
-            b.style.color = 'var(--text-dark)';
-            b.style.borderBottom = '1px solid var(--text-dark)';
-          } else {
-            b.classList.remove('active');
-            b.style.color = 'var(--text-muted)';
-            b.style.borderBottom = '1px solid transparent';
-          }
+        // Basic inline styles for the buttons
+        btn.style.background = 'transparent';
+        btn.style.border = 'none';
+        btn.style.cursor = 'pointer';
+        btn.style.fontFamily = 'var(--font-sans)';
+        btn.style.fontSize = '0.75rem';
+        btn.style.textTransform = 'uppercase';
+        btn.style.letterSpacing = '0.1em';
+        btn.style.color = currentLayout === layout ? 'var(--text-dark)' : 'var(--text-muted)';
+        btn.style.borderBottom = currentLayout === layout ? '1px solid var(--text-dark)' : '1px solid transparent';
+        btn.style.paddingBottom = '4px';
+        btn.style.transition = 'all 0.3s ease';
+        
+        btn.addEventListener('click', () => {
+          currentLayout = layout;
+          renderGallery();
+          
+          // Update active states
+          controlsDiv.querySelectorAll('.layout-btn').forEach(b => {
+            if (b.getAttribute('data-layout') === layout) {
+              b.classList.add('active');
+              b.style.color = 'var(--text-dark)';
+              b.style.borderBottom = '1px solid var(--text-dark)';
+            } else {
+              b.classList.remove('active');
+              b.style.color = 'var(--text-muted)';
+              b.style.borderBottom = '1px solid transparent';
+            }
+          });
         });
+        controlsDiv.appendChild(btn);
       });
-      controlsDiv.appendChild(btn);
-    });
-    container.parentNode.insertBefore(controlsDiv, container);
+      container.parentNode.insertBefore(controlsDiv, container);
+    }
+  } else if (controlsDiv) {
+    controlsDiv.style.display = 'none';
   }
 
   // 3. Render Function
