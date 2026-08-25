@@ -164,6 +164,15 @@ body[data-active-page="home"] .site-header {
   background: transparent;
   border-bottom: none;
 }
+body[data-active-page="home"] .site-header:not(.scrolled) .site-logo,
+body[data-active-page="home"] .site-header:not(.scrolled) .nav-link {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+body[data-active-page="home"] .site-header:not(.scrolled) .site-logo::after {
+  background: #ffffff;
+}
+
 body[data-active-page="home"] .site-header.scrolled {
   background: var(--bg);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
