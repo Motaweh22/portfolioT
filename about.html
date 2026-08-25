@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Mohamed Aymen</title>
+  <meta name="description" content="About Mohamed Aymen." />
+  
+  
+  
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-active-page="about">
+
+  <!-- Page transition overlay -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Header Mount Point -->
+  <div id="header-mount"></div>
+
+  <main class="page" id="page-about">
+    <section class="about-section fade-in-up" id="dynamic-about">
+      <!-- Content injected by js/pages/about.js -->
+    </section>
+  </main>
+
+  <!-- Footer Mount Point -->
+  <div id="footer-mount"></div>
+
+  <!-- Shared Scripts -->
+  <script src="js/data/db.js"></script>
+  <script src="js/components/cursor.js"></script>
+  <script src="js/components/nav.js"></script>
+  <script src="js/components/search.js"></script>
+  <script src="js/components/scroll-reveal.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Page Specific Scripts -->
+  <script src="js/pages/about.js"></script>
+<script src="js/components/lightbox.js"></script></body>
+</html>
