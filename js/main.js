@@ -46,7 +46,7 @@ function wireGalleryItems(dataMap = null) {
     // Navigation on click
     const projectKey = item.dataset.project;
     if (projectKey) {
-      item.style.cursor = 'none';
+      item.style.cursor = 'pointer';
       item.addEventListener('click', () => {
         window.location.href = `project.html?key=${projectKey}`;
       });
